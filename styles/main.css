@@ -78,7 +78,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start ;
     padding: 14px;
     margin: auto;
     position: relative;
@@ -165,4 +165,17 @@ body {
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+.food-selected, .beverage-selected, .dessert-selected {
+    border: 5px solid #32B72F;
+    padding: 9px;
+}
+
+.food-selected > ion-icon, .beverage-selected > ion-icon, .dessert-selected > ion-icon {
+    color: #32B72F;
+}
+
+.hidden {
+    display: none;
 }
