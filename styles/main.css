@@ -145,7 +145,7 @@ body {
     align-items: center;
 }
 
-.order-button {
+.confirmbutton {
     width: 364px;
     height: 61px;
     margin: 15px 25px;
@@ -155,10 +155,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-.order-button p {
+.confirmbutton p {
     width: 100%;
     max-width: 198px;
     font-family: 'Roboto', sans-serif;
@@ -174,6 +173,16 @@ body {
 
 .food-selected > ion-icon, .beverage-selected > ion-icon, .dessert-selected > ion-icon {
     color: #32B72F;
+}
+
+.confirm-order {
+    background-color: #32B72F;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.confirm-order:hover {
+    cursor: pointer;
 }
 
 .hidden {
