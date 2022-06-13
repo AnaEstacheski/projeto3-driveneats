@@ -46,3 +46,38 @@ function selectOrder() {
         confirm.onclick = confirmOrder;
     }
 }
+
+let order = document.querySelector(".display-confirm");
+
+function confirmOrder() {
+    order.classList.remove("hidden");
+    document.querySelector(".food-final").innerHTML = food[0];
+    document.querySelector(".beverage-final").innerHTML = beverage[0];
+    document.querySelector(".dessert-final").innerHTML = dessert[0];
+    document.querySelector(".price-food").innerHTML = "R$ " + food[1].toFixed(2).replace(".", ",");
+    document.querySelector(".price-beverage").innerHTML = "R$ " + beverage[1].toFixed(2).replace(".", ",");
+    document.querySelector(".price-dessert").innerHTML = "R$ " + food[1].toFixed(2).replace(".", ",");
+    document.querySelector(".price-final").innerHTML = "R$ " + total.replace(".", ",");
+    let confirm = document.querySelector(".confirm-Order");
+    confirm.onclick = sendOrder;
+    let cancel = document.querySelector(".cancel-order");
+    cancel.onclick = cancelOrder;
+}
+
+function cancelOrder() {
+    order.classList.add("hidden");
+}
+
+
+function sendOrder() {
+    const name = prompt("Qual o seu nome?");
+    const address = prompt("Qual o seu endereço?");
+    let message = `Olá, gostaria de fazer o pedido:
+- Prato: ${food[0]}
+- Bebida: ${beverage[0]}
+- Sobremesa: ${dessert[0]}
+Total: R$ ${total}\n
+Nome: ${name}
+Endereço: ${address}`;
+    window.location.href = "https://wa.me/5521971343779?text=" + encodeURIComponent(message);
+}

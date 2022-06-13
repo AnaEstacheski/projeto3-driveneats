@@ -188,3 +188,69 @@ body {
 .hidden {
     display: none;
 }
+
+.confirm {
+    background-color: #50D074;
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px 24px;
+    color: #FFFFFF;
+    position: fixed;
+    top: 200.5px;
+    left: 18.5px;
+    z-index: 2;
+}
+.confirm h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.confirm p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.confirm-Order {
+    background-color: #32B72F;;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 100px;
+    width: 329px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+.cancel-order {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.confirm div div {
+    display: flex;
+    justify-content: space-between;
+}
+.confirm-list {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.display-confirm {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
