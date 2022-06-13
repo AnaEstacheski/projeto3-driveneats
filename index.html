@@ -3,14 +3,199 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <title>Driven Eats</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
-
-    <title>Driven Eats</title>
 </head>
+
 <body>
-        
+
+    <!-- <div class="final hidden">
+            <div class="confirm">
+                <div class="fromh3">
+                    <h3>Confirme seu pedido</h3>
+                </div>
+                <div class="straight">
+                    <div class="meal">Comida</div>
+                    <div class="confirm-meal-price">Preço</div>
+                </div>
+                <div class="straight">
+                    <div class="beverage">Bebida</div>
+                    <div class="confirm-beverage-price">Preço</div>
+                </div>
+                <div class="straight">
+                    <div class="dessert">Sobremesa</div>
+                    <div class="confirm-dessert-price">Preço</div>
+                </div>
+                <div class="straight">
+                    <div class="totalprice">TOTAL</div>
+                    <div class="priceof-totalprice">Valor</div>
+                </div>
+
+                <div class="bottompart">
+                <div class="bottom-column">
+                    <div class="confirm-button">
+                        <h3 onclick="finallySubmit()">Tudo certo, pode pedir!</h3>
+                    </div>
+                    <div>
+                        <h5 onclick="canceling()">Cancelar</h5>
+                    </div>
+                </div> 
+            </div>  
+        </div> 
+    </div> -->
+
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <img class="logo-img" src="assets/DrivenEats.png" alt="Drive Eats" />
+            <p class="subtitle">Sua comida em 6 minutos</p class="subtitle">
+        </div>
+    </nav>
+
+        <!-- SELECIONE SUA COMIDA -->
+
+        <div class="order">
+            <h1 class="title-order">Primeiro, seu prato</h1>
+                <div class="orderwrapper">
+                    <div class="food" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/frango_yin_yang 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Frango Yin Yang</h1>
+                            <p class="description">Um pouco de batata, um pouco de salada</p>
+                            <span>R$ 14,90</span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="food" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/frango_yin_yang 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Arroz Yin Yang</h1>
+                            <p class="description">Um pouco de arroz, um pouco de salada</p>
+                            <span>R$ 20,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="food" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/frango_yin_yang 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Brócolis Yin Yang</h1>
+                            <p class="description">Um pouco de brócolis, um pouco de salada</p>
+                            <span>R$ 12,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="food" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/frango_yin_yang 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Shitake Yin Yang</h1>
+                            <p class="description">Um pouco de shitake, um pouco de salada</p>
+                            <span>R$ 15,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+                
+                </div>
+
+
+        <!-- SELECIONE SUA BEBIDA -->
+
+            <h1 class="title-order">Agora, sua bebida</h1>
+                <div class="orderwrapper">
+                    <div class="beverage" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/coquinha_gelada 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Coquinha gelada</h1>
+                            <p class="description">Lata 350ml</p>
+                            <span>R$ 4,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="beverage" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/coquinha_gelada 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Tonicazinha gelada</h1>
+                            <p class="description">Lata 350ml</p>
+                            <span>R$ 5,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="beverage" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/coquinha_gelada 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Aguinha gelada</h1>
+                            <p class="description">Garrafa 500ml</p>
+                            <span>R$ 3,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="beverage" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/coquinha_gelada 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Cervejinha gelada</h1>
+                            <p class="description">Lata 350ml</p>
+                            <span>R$ 7,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+
+        <!-- SELECIONE SUA SOBREMESA -->
+
+            <h1 class="title-order">Por fim, sua sobremesa</h1>
+                <div class="orderwrapper">
+                    <div class="dessert" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/pudim 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Pudim</h1>
+                            <p class="description">Apenas pudim</p>
+                            <span>R$ 7,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="dessert" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/pudim 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Bolo</h1>
+                            <p class="description">Apenas bolo</p>
+                            <span>R$ 5,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="dessert" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/pudim 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Suflê</h1>
+                            <p class="description">Apenas suflê</p>
+                            <span>R$ 6,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <div class="dessert" onclick="selectmeal(this)">
+                        <div class="order-pic"><img src="assets/pudim 1.png" alt=""></div>
+                        <div class="content-order">
+                            <h1>Gelatina</h1>
+                            <p class="description">Apenas gelatina</p>
+                            <span>R$ 4,90<span>
+                        </div>
+                        <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+        </div>
+
+    <div class="footer-bar">
+        <button class="order-button"><p>Selecione os 3 itens para fechar o pedido</p></button>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script/app.js"></script>
 </body>
 </html>
